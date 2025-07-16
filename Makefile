@@ -520,3 +520,4 @@ server-integration-tests-meshsync-run:
 
 ## Runs meshsync integration tests full cycle (docker build, setup, run, cleanup)
 server-integration-tests-meshsync: docker-build server-integration-tests-meshsync-setup server-integration-tests-meshsync-run server-integration-tests-meshsync-cleanup
+
